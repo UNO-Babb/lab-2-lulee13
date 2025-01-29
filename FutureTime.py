@@ -29,14 +29,14 @@ def main():
   #Do not use any if statements in calculating the time.
 
   #Output the future time in standard format "HH:MM"
-  if futureHour > 9 and futureMinutes > 9:      #I chose to make myself miserable and add a leading zero to the hours, too. 
-    print(str(futureHour) + ":" + str(futureMinutes))
+  if futureHour > 9 and futureMinutes > 9:      #I chose to make myself miserable and add a leading zero to the hours too. 
+    print(str(futureHour) + ":" + str(futureMinutes) + " GMT")
   if futureHour < 10 and futureMinutes > 9:
-    print("0" + str(futureHour) + ":" + str(futureMinutes))
+    print("0" + str(futureHour) + ":" + str(futureMinutes) + " GMT")
   if futureHour > 9 and futureMinutes < 10:
-    print(str(futureHour) + ":0" + str(futureMinutes))
+    print(str(futureHour) + ":0" + str(futureMinutes) + " GMT")
   if futureHour < 10 and futureMinutes < 10:
-    print("0" + str(futureHour) + ":0" + str(futureMinutes))
+    print("0" + str(futureHour) + ":0" + str(futureMinutes) + " GMT")
 
 
 if __name__ == '__main__':
