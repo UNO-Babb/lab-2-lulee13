@@ -12,7 +12,7 @@ def main():
   currentHour = now.hour
   currentMinute = now.minute
 
-  print (currentHour, currentMinute) #this is just for checking, we should delete it later
+  
 
   #TODO:
   #Ask user for hours
@@ -29,14 +29,14 @@ def main():
   #Do not use any if statements in calculating the time.
 
   #Output the future time in standard format "HH:MM"
-  if futureHour > 9 and futureMinutes > 9:
-    print(futureHour + ":" + futureMinutes)
+  if futureHour > 9 and futureMinutes > 9:      #I chose to make myself miserable and add a leading zero to the hours, too. 
+    print(str(futureHour) + ":" + str(futureMinutes))
   if futureHour < 10 and futureMinutes > 9:
-    print("0" + futureHour + ":" + futureMinutes)
+    print("0" + str(futureHour) + ":" + str(futureMinutes))
   if futureHour > 9 and futureMinutes < 10:
-    print(futureHour + ":0" + futureMinutes)
+    print(str(futureHour) + ":0" + str(futureMinutes))
   if futureHour < 10 and futureMinutes < 10:
-    print("0" + futureHour + ":0" + futureMinutes)
+    print("0" + str(futureHour) + ":0" + str(futureMinutes))
 
 
 if __name__ == '__main__':
